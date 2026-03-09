@@ -11,6 +11,7 @@ in {
           (python-final: python-prev: {
             akracer = python-final.callPackage ./pkgs/python/akracer { };
             akshare = python-final.callPackage ./pkgs/python/akshare { };
+            mini-racer = python-final.callPackage ./pkgs/python/mini-racer { };
           })
         ];
       })
