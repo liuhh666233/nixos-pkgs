@@ -38,7 +38,7 @@ buildPythonPackage rec {
 
   # aiohttp: nixpkgs 版本低于上游要求，移除版本检查但保留 Nix 依赖
   # py-mini-racer: 用 akracer 替代
-  pythonRemoveDeps = [ "aiohttp" "py-mini-racer" ];
+  pythonRemoveDeps = [ "aiohttp" "py-mini-racer" "mini-racer" ];
 
   meta = {
     description =
