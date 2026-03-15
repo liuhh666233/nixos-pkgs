@@ -1,4 +1,4 @@
-{ lib, buildPythonPackage, fetchPypi, setuptools, pythonOlder, autoPatchelfHook
+{ lib, buildPythonPackage, fetchPypi, setuptools, pythonOlder
 , requests, six, pandas, cachetools, protobuf, lxml, beautifulsoup4, tqdm }:
 let
   url =
@@ -25,7 +25,6 @@ in buildPythonPackage rec {
     tqdm
   ];
   doCheck = false;
-  nativeBuildInputs = [ autoPatchelfHook ];
 
   # Patch pandas 2 compatibility: replace DataFrame/Series.append with _append
   # We do this post-install since the source is a wheel layout.
