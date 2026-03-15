@@ -12,6 +12,7 @@ in {
             akracer = python-final.callPackage ./pkgs/python/akracer { };
             akshare = python-final.callPackage ./pkgs/python/akshare { };
             mini-racer = python-final.callPackage ./pkgs/python/mini-racer { };
+            tushare = python-final.callPackage ./pkgs/python/tushare { };
           })
         ];
       })
@@ -49,6 +50,7 @@ in {
           pudb
           rich
           akshare
+          tushare
         ]));
 
     in pkgs-dev.mkShell.override {
