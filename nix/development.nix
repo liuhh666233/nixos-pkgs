@@ -12,6 +12,7 @@ in {
             akracer = python-final.callPackage ./pkgs/python/akracer { };
             akshare = python-final.callPackage ./pkgs/python/akshare { };
             mini-racer = python-final.callPackage ./pkgs/python/mini-racer { };
+            qlib = python-final.callPackage ./pkgs/python/qlib { };
             tushare = python-final.callPackage ./pkgs/python/tushare { };
           })
         ];
