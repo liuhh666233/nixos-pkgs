@@ -14,6 +14,7 @@ in {
             mini-racer = python-final.callPackage ./pkgs/python/mini-racer { };
             qlib = python-final.callPackage ./pkgs/python/qlib { };
             tushare = python-final.callPackage ./pkgs/python/tushare { };
+            mlflow = python-final.callPackage ./pkgs/python/mlflow { };
           })
         ];
       })
@@ -52,6 +53,7 @@ in {
           rich
           akshare
           tushare
+          mlflow
         ]));
 
     in pkgs-dev.mkShell.override {
